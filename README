@@ -1,0 +1,36 @@
+# PostgreSQL CRUD with Python
+# Blessy Rampogu
+
+## Prereqs
+    # - Python 3.11+ (venv recommended)
+    # - PostgreSQL (pgAdmin ok)
+
+## Database
+    # Run this in Query Tool:
+    """
+    CREATE TABLE IF NOT EXISTS students (
+      student_id SERIAL PRIMARY KEY,
+      first_name TEXT NOT NULL,
+      last_name  TEXT NOT NULL,
+      email      TEXT NOT NULL UNIQUE,
+      enrollment_date DATE
+    );
+
+    INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
+    ('John','Doe','john.doe@example.com','2023-09-01'),
+    ('Jane','Smith','jane.smith@example.com','2023-09-01'),
+    ('Jim','Beam','jim.beam@example.com','2023-09-02')
+    ON CONFLICT DO NOTHING;
+    """
+
+#Run commands: 
+    # from your project folder, with venv active
+        #   py student.py get
+        #   py student.py add --first Alice --last Wonder --email alice.wonder@example.com --date 2023-09-03
+        #   py student.py update --id 7 --email alice.w@example.com
+        #   py student.py delete --id 7
+
+
+
+
+
