@@ -36,7 +36,7 @@
     # 4. Delete a student
     #       py student.py delete --id <student_id>
 
-#  YouTube Tutorial: [https://youtu.be/qguvg9UKa_8?si=SpdBWRE09aoocp65] (https://youtu.be/qguvg9UKa_8?si=SpdBWRE09aoocp65)
+#  YouTube Tutorial: https://youtu.be/qguvg9UKa_8?si=SpdBWRE09aoocp65
 
 NOTES: parse_args() is a function that looks at what you typed in the command line, checks if it’s valid, and then gives your program the values it needs to run the correct command.
 
