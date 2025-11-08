@@ -1,9 +1,8 @@
-# PostgreSQL CRUD with Python
-# Blessy Rampogu
+# Blessy Rampogu 101264729
 
 ## Prereqs
-    # - Python 3.11+ (venv recommended)
-    # - PostgreSQL (pgAdmin ok)
+    # - Python 3.11+ 
+    # - PostgreSQL 
 
 ## Database
     # Run this in Query Tool:
@@ -23,12 +22,24 @@
     ON CONFLICT DO NOTHING;
     """
 
-#Run commands: 
-    # from your project folder, with venv active
-        #   py student.py get
-        #   py student.py add --first Alice --last Wonder --email alice.wonder@example.com --date 2023-09-03
-        #   py student.py update --id 7 --email alice.w@example.com
-        #   py student.py delete --id 7
+# Run Commands:
+    # 1. Get all students
+    #       py student.py get
+
+    # 2. Add a student
+    #       py student.py add --first <first_name> --last <last_name> --email <email> --date <YYYY-MM-DD>
+    #       (Replace placeholders with correct info)
+    
+    # 3. Update a student's email
+    #       py student.py update --id <student_id> --email <new_email>
+    
+    # 4. Delete a student
+    #       py student.py delete --id <student_id>
+
+#  YouTube Tutorial: [https://youtu.be/qguvg9UKa_8?si=SpdBWRE09aoocp65] (https://youtu.be/qguvg9UKa_8?si=SpdBWRE09aoocp65)
+
+NOTES: parse_args() is a function that looks at what you typed in the command line, checks if it’s valid, and then gives your program the values it needs to run the correct command.
+
 
 
 
